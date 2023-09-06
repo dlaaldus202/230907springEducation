@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-# springEducation3
-=======
-# springEducation2
->>>>>>> branch 'main' of https://github.com/dlaaldus202/springEducation2.git
+[오전]
+230907_Tistory 정리
+
+[오후]
+230907_ 교육내용 목차 정리 
+230907_ 주석및 update
