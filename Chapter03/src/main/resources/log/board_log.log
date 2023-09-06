@@ -1,0 +1,153 @@
+2023-09-06T10:30:46.055+09:00  INFO 15264 --- [restartedMain] com.rubypaper.Chapter03Application       : Starting Chapter03Application using Java 17.0.2 with PID 15264 (C:\DEV\eclipse-workspace\Chapter03\target\classes started by student in C:\DEV\eclipse-workspace\Chapter03)
+2023-09-06T10:30:46.056+09:00 DEBUG 15264 --- [restartedMain] com.rubypaper.Chapter03Application       : Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06T10:30:46.056+09:00  INFO 15264 --- [restartedMain] com.rubypaper.Chapter03Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-06T10:30:46.233+09:00  INFO 15264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-06T10:30:46.241+09:00  INFO 15264 --- [restartedMain] com.rubypaper.Chapter03Application       : Started Chapter03Application in 0.235 seconds (process running for 164.59)
+2023-09-06T10:30:46.242+09:00 ERROR 15264 --- [restartedMain] com.rubypaper.service.LogginService      : error 레벨 로그
+2023-09-06T10:30:46.242+09:00  WARN 15264 --- [restartedMain] com.rubypaper.service.LogginService      : warn 레벨 로그
+2023-09-06T10:30:46.242+09:00  INFO 15264 --- [restartedMain] com.rubypaper.service.LogginService      : info 레벨 로그
+2023-09-06T10:30:46.243+09:00 DEBUG 15264 --- [restartedMain] com.rubypaper.service.LogginService      : debug 레벨 로그
+2023-09-06T10:30:46.243+09:00 TRACE 15264 --- [restartedMain] com.rubypaper.service.LogginService      : trace 레벨 로그
+2023-09-06T10:30:46.246+09:00  INFO 15264 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication (required) not a servlet web application and did not find reactive web application classes (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.h2.server.web.JakartaWebServlet' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'jakarta.websocket.server.ServerContainer' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-09-06T10:30:46.248+09:00  INFO 15264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-09-06T10:30:46.265+09:00  INFO 15264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:tcp://localhost/~/test user=SA
+2023-09-06T10:30:46.265+09:00  INFO 15264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-09-06T10:30:46.479+09:00  WARN 15264 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-09-06T10:30:46.479+09:00  INFO 15264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-09-06T10:30:46.551+09:00  INFO 15264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-09-06T10:31:21.165+09:00  INFO 7512 --- [restartedMain] com.rubypaper.Chapter03Application       : Starting Chapter03Application using Java 17.0.2 with PID 7512 (C:\DEV\eclipse-workspace\Chapter03\target\classes started by student in C:\DEV\eclipse-workspace\Chapter03)
+2023-09-06T10:31:21.167+09:00 DEBUG 7512 --- [restartedMain] com.rubypaper.Chapter03Application       : Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06T10:31:21.168+09:00  INFO 7512 --- [restartedMain] com.rubypaper.Chapter03Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-06T10:31:21.206+09:00  INFO 7512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-06T10:31:21.207+09:00  INFO 7512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-06T10:31:21.912+09:00  INFO 7512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-06T10:31:21.932+09:00  INFO 7512 --- [restartedMain] com.rubypaper.Chapter03Application       : Started Chapter03Application in 1.092 seconds (process running for 1.719)
+2023-09-06T10:31:21.933+09:00 ERROR 7512 --- [restartedMain] com.rubypaper.service.LogginService      : error 레벨 로그
+2023-09-06T10:31:21.934+09:00  WARN 7512 --- [restartedMain] com.rubypaper.service.LogginService      : warn 레벨 로그
+2023-09-06T10:31:21.934+09:00  INFO 7512 --- [restartedMain] com.rubypaper.service.LogginService      : info 레벨 로그
+2023-09-06T10:31:21.934+09:00 DEBUG 7512 --- [restartedMain] com.rubypaper.service.LogginService      : debug 레벨 로그
+2023-09-06T10:31:21.934+09:00 TRACE 7512 --- [restartedMain] com.rubypaper.service.LogginService      : trace 레벨 로그
+2023-09-06T10:31:21.940+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-06T10:31:22.014+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
+2023-09-06T10:31:22.015+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-06T10:31:22.242+09:00  WARN 7512 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-09-06T10:31:22.243+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-06T10:31:22.293+09:00  INFO 7512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-06T10:35:56.323+09:00  INFO 7120 --- [restartedMain] com.rubypaper.Chapter03Application       : Starting Chapter03Application using Java 17.0.2 with PID 7120 (C:\DEV\eclipse-workspace\Chapter03\target\classes started by student in C:\DEV\eclipse-workspace\Chapter03)
+2023-09-06T10:35:56.325+09:00 DEBUG 7120 --- [restartedMain] com.rubypaper.Chapter03Application       : Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06T10:35:56.325+09:00  INFO 7120 --- [restartedMain] com.rubypaper.Chapter03Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-06T10:35:56.369+09:00  INFO 7120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-06T10:35:56.369+09:00  INFO 7120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-06T10:35:57.068+09:00  INFO 7120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-06T10:35:57.088+09:00  INFO 7120 --- [restartedMain] com.rubypaper.Chapter03Application       : Started Chapter03Application in 1.099 seconds (process running for 1.738)
+2023-09-06T10:35:57.089+09:00 ERROR 7120 --- [restartedMain] com.rubypaper.service.LogginService      : error 레벨 로그
+2023-09-06T10:35:57.089+09:00  WARN 7120 --- [restartedMain] com.rubypaper.service.LogginService      : warn 레벨 로그
+2023-09-06T10:35:57.089+09:00  INFO 7120 --- [restartedMain] com.rubypaper.service.LogginService      : info 레벨 로그
+2023-09-06T10:35:57.089+09:00 DEBUG 7120 --- [restartedMain] com.rubypaper.service.LogginService      : debug 레벨 로그
+2023-09-06T10:35:57.089+09:00 TRACE 7120 --- [restartedMain] com.rubypaper.service.LogginService      : trace 레벨 로그
+2023-09-06T10:35:57.096+09:00  INFO 7120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-06T10:35:57.165+09:00  INFO 7120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
+2023-09-06T10:35:57.166+09:00  INFO 7120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-06T10:35:57.388+09:00  WARN 7120 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-09-06T10:35:57.388+09:00  INFO 7120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-06T10:35:57.455+09:00  INFO 7120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-06T10:36:38.990+09:00  INFO 16560 --- [restartedMain] com.rubypaper.Chapter03Application       : Starting Chapter03Application using Java 17.0.2 with PID 16560 (C:\DEV\eclipse-workspace\Chapter03\target\classes started by student in C:\DEV\eclipse-workspace\Chapter03)
+2023-09-06T10:36:38.991+09:00 DEBUG 16560 --- [restartedMain] com.rubypaper.Chapter03Application       : Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06T10:36:38.991+09:00  INFO 16560 --- [restartedMain] com.rubypaper.Chapter03Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-06T10:36:39.029+09:00  INFO 16560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-06T10:36:39.030+09:00  INFO 16560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-06T10:36:39.705+09:00  INFO 16560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-06T10:36:39.724+09:00  INFO 16560 --- [restartedMain] com.rubypaper.Chapter03Application       : Started Chapter03Application in 1.053 seconds (process running for 1.649)
+2023-09-06T10:36:39.725+09:00 ERROR 16560 --- [restartedMain] com.rubypaper.service.LogginService      : error 레벨 로그
+2023-09-06T10:36:39.725+09:00  WARN 16560 --- [restartedMain] com.rubypaper.service.LogginService      : warn 레벨 로그
+2023-09-06T10:36:39.726+09:00  INFO 16560 --- [restartedMain] com.rubypaper.service.LogginService      : info 레벨 로그
+2023-09-06T10:36:39.726+09:00 DEBUG 16560 --- [restartedMain] com.rubypaper.service.LogginService      : debug 레벨 로그
+2023-09-06T10:36:39.726+09:00 TRACE 16560 --- [restartedMain] com.rubypaper.service.LogginService      : trace 레벨 로그
+2023-09-06T10:36:39.732+09:00  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-06T10:36:39.803+09:00  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
+2023-09-06T10:36:39.805+09:00  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-06T10:36:40.030+09:00  WARN 16560 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-09-06T10:36:40.031+09:00  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-06T10:36:40.082+09:00  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
