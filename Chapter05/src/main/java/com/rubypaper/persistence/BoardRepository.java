@@ -21,4 +21,8 @@ public interface BoardRepository extends JpaRepository<Board, Integer> {
 	//jqal
 	//select b from Board AS b where b.title = :searchKeyword
 	List<Board> findBoardByTitle(String searcKeyWord);
+	
+	//select b from Board AS b where b.title = :searchKeyword
+	//List<Board> findByTitle(String searcKeyWord);
+		
 }

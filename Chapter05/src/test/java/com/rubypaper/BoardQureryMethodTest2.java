@@ -38,7 +38,7 @@ class BoardQureryMethodTest2 {
 	}
 
 	//Test 처음에 실행
-	@BeforeEach
+	//@BeforeEach
 	void testInsertBoard() {
 		for (int i = 0; i < 200 ; i++) {
 			Board board = new Board();
